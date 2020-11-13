@@ -1,0 +1,91 @@
+article(class="idlerpg")
+    h2 Idle RPG
+    p.
+        The Idle RPG is just what it sounds like: an RPG in which the players idle. In addition to merely gaining levels, players can find items and battle other players. However, this is all done for you; you just idle. There are no set classes; you can name your character anything you like, and have its class be anything you like, as well.
+
+    p Idle RPG can be found on the 
+        code #idlerpg
+        |   channel.
+
+    h2 Penalties
+    p.
+        If you do something other than idle, like part, quit, talk in the channel, change your nick, or notice the channel, you are penalized. The penalties are time, in seconds, added to your next time to level and are based on your character level. The formulae are as follows:
+
+
+    table
+        thead
+            tr
+                th Task
+                th Penalty
+
+        tbody
+            tr
+                td Nick change
+                td 30 * (1.14^(YOUR_LEVEL))
+
+            tr
+                td Part
+                td 200 * (1.14^(YOUR_LEVEL))
+
+            tr
+                td Quit
+                td 20 * (1.14^(YOUR_LEVEL))
+
+            tr
+                td LOGOUT command
+                td 20 * (1.14^(YOUR_LEVEL))
+
+            tr
+                td Being kicked
+                td 250 * (1.14^(YOUR_LEVEL))
+
+            tr
+                td Channel privmsg
+                td [message<em>length] * (1.14^(YOUR</em>LEVEL))
+
+            tr
+                td Channel notice
+                td [message<em>length] * (1.14^(YOUR</em>LEVEL))
+
+
+    p Penalty shorthand is 
+        code p[num] 
+        |. So, a nick change is a 
+        code p30
+        |   event, parting the channel is a 
+        code p200
+        |   event, and quitting IRC is a 
+        code p20
+        |   event. Messages and notices are 
+        code p[length of message in characters].
+
+    h2 Commands
+
+    h3 <code>REGISTER</code>
+    p You will need to separately register with the Idle RPG bot.
+
+    code(class="code") /msg iRPG REGISTER &lt;char name&gt; &lt;password&gt; &lt;char class&gt;
+
+    p Where &#39;char name&#39; can be up to 16 chars long, &#39;password&#39; can be up to 8 characters, and &#39;char class&#39; can be up to 30 chars.
+
+    code(style="display: flex;padding: 7px;") IE: /msg iRPG REGISTER Poseidon MyPassword God of the Sea
+
+
+    h3 <code>LOGIN</code>
+    p To login, simply:
+
+    code(class="code") /msg iRPG LOGIN &lt;char name&gt; &lt;password&gt;
+
+    h3 <code>LOGOUT</code>
+    p To logout, simply:
+
+    code(class="code") /msg iRPG LOGOUT
+
+    h3 <code>NEWPASS</code>
+    p You can change your password using the <code>NEWPASS</code> command. For example:
+
+    code(class="code") /msg iRPG NEWPASS &lt;new password&gt;
+
+    p See 
+        a(href="http://idlerpg.net/") Idle RPG
+        |   for more information on how Idle RPG works and the available commands.
