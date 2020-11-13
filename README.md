@@ -12,7 +12,7 @@ Website + webchat https://gooseswell.mooo.com/
 To compile this website:
 
 ```
-$ yarn global pug-cli
+$ yarn global add pug-cli
 $ chmod +x render.sh
 $ serve html/
 ```
