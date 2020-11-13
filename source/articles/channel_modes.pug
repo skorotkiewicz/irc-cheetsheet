@@ -1,0 +1,90 @@
+article
+    h2 Channel Modes
+
+    p Set mode: 
+    code /mode #channel +/-attribute
+    p Set with ChanServ: 
+    code /msg ChanServ SET #channel MLOCK +/-attribute
+
+    table
+        thead
+            tr
+                th Mode
+                th
+            tr
+                td +n
+                td Disallows external messages.
+            tr
+                td +t
+                td Only op/hops can set the topic.
+            tr
+                td +p
+                td Sets the channel as invisible in /list.
+            tr
+                td +s
+                td Sets the channel as invisible in /list and /whois.
+            tr
+                td +i
+                td Sets the channel as Invite-Only
+            tr
+                td +k [pass]
+                td Sets a password for the channel which users must enter to join.
+            tr
+                td +l [number]
+                td Sets a limit on the number of users who are allowed in the channel at the same time.
+            tr
+                td +m
+                td Prevents users who are not opped/hopped/voiced from talking.
+            tr
+                td +R
+                td Sets the channel so only registered nicks are allowed in.
+            tr
+                td +M
+                td Sets the channel so only registered nicks are allowed to talk.
+            tr
+                td +S
+                td Strips formatting from messages, rendering them as plaintext.
+            tr
+                td +c
+                td Blocks messages containing color codes.
+            tr
+                td +i
+                td A user must be invited to join the channel.
+            tr
+                td +N
+                td No nick changes permitted in the channel.
+
+
+
+    h2 Prefixes 
+
+    p Set prefix:
+    code /mode #channel +q [user]
+
+    table
+        thead
+            tr
+                th Prefix
+                th Mode
+                th Title
+            tr
+                td ~
+                td +q
+                td User is owner of the current channel 
+            tr
+                td &amp;
+                td +a
+                td User is an admin (SOP) 
+            tr
+                td @
+                td +o
+                td User is an operator (AOP)
+            tr
+                td %
+                td +h
+                td User is a half-op on the current channel
+            tr
+                td +
+                td +v
+                td User has voice on the current channel 
+

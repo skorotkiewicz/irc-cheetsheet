@@ -1,0 +1,69 @@
+article
+    h1(style="font-size: 32px;") Other stuff
+
+    h2 Kicking people
+    table
+        thead
+            tr
+                th Command
+                th
+            tr
+                td /kick #channel nickname [reason]
+                td Temporarily remove user from channel
+
+
+    h2 Banning people
+    table
+        thead
+            tr
+                th Command
+                th
+            tr
+                td /mode #channel +b hosts
+                td Hosts take the following form: nickname!userid@hostname
+
+    p Use /whois, /whowas or /who to find the information necessary for a ban.
+      | * is a wildcard and can replace nickname, userid, parts of nickname or userid, hostname or a segment of a hostname.
+
+    table
+        thead
+            tr
+                th Examples
+                th
+            tr
+                td joe!*@*
+                td Will prevent anyone with the nick joe from joining.
+            tr
+                td *myg0t*!*
+                td Will prevent anyone whose nick contains myg0t from joining.
+            tr
+                td mark!*elc@*
+                td Will prevent anyone with the nick mark and the userid elc from joining.
+            tr
+                td *!*@c-123-24-76-213.ga.isp.net
+                td Will prevent anyone with the host c-123-24-76-213.ga.isp.net from joining.
+            tr
+                td *!*@*
+                td Bans everyone. Don't do that.
+
+
+    h2 AKICKs
+    p People on the AKICK list are automatically kicked and banned when they enter the channel. Bans made as a result of AKICK must be removed manually.
+
+    table
+        thead
+            tr
+                th Command
+                th
+            tr
+                td /cs akick #channel add host [reason]
+                td Adds host to #channel's AKICK list [for reason].
+            tr
+                td /cs akick #channel del host
+                td Removes host from the AKICK list.
+            tr
+                td /cs akick #channel list
+                td 
+            tr
+                td /cs akick #channel view
+                td Displays the AKICK list.

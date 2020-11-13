@@ -1,0 +1,86 @@
+article
+    h2 Channel Management (ChanServ)
+    p All ChanServ commands begin with /msg ChanServ but this server has /cs shortcut.
+
+    table
+        thead
+            tr
+                th Command
+                th
+
+            tr
+                td /msg ChanServ register #channel
+                td Register your channel
+
+            tr
+                td /msg ChanServ set #channel guard {ON | OFF}
+                td Enable / DISABLE the GUARD (ChanServ) flag for your channel using
+
+            tr
+                td /msg ChanServ flags #channel yournick +o
+                td Set ops
+
+            tr
+                td /msg ChanServ flags #channel yournick +oO
+                td Set ops and auto-ops:
+
+            tr
+                td /msg ChanServ SET #channel TOPICLOCK {ON | OFF}
+                td Set topic lock ON or OFF
+
+            tr
+                td /msg ChanServ op #channel
+                td Set op/deop to myself
+
+            tr
+                td /cs identify #channel [password]
+                td Identifies you as the channel's founder and gives you founder-level privileges.
+
+            tr
+                td /cs set #channel mlock modes
+                td Locks the channel's modes. Just + unlocks all.
+
+            tr
+                td /cs set #channel secureops [on|off]
+                td Keeps everyone except aops, sops, and the founder from becoming ops.
+
+            tr
+                td /cs set #channel keeptopic [on|off]
+                td Maintains the topic even if everyone leaves.
+
+            tr
+                td /cs set #channel enforce [on|off]
+                td Restores op/halfop/voice if a person with op/halfop/voice gets de-opped/halfopped/voiced.
+
+            tr
+                td /cs set #channel leaveops [on|off]
+                td Whether or not to allow the first person who join the channel to get ops.
+
+            tr
+                td /cs register #channel password description
+                td Registers the current channel to you with ChanServ and sets its password and description.
+
+            tr
+                td /cs drop #channel [dropcode]
+                td Un-registers the current channel to you with ChanServ.
+
+            tr
+                td /cs set #channel founder [nickname]
+                td Sets the current channel's founder.
+
+            tr
+                td /cs set #channel password [newpass]
+                td Changes the current channel's password to newpass.
+
+            tr
+                td /cs set #channel desc [description]
+                td Changes the current channel's description.
+
+            tr
+                td /cs set #channel url [address]
+                td Associates a URL with the channel.
+
+            tr
+                td /cs set #channel [email@address]
+                td Associates an email address with the channel.
+
