@@ -9,11 +9,8 @@ body {
 }
 .container {
   margin: 0 auto;
-
-  /*display: grid; */
   display: flex;
   flex-flow: column;
-
   max-width: 900px;
   min-height: 100vh;
   background-color: #e8e8e8;
@@ -42,12 +39,6 @@ body {
   border: 2px solid #ccc;
   background-color: #ebebeb;
 }
-.navbox {
-  padding: 5px;
-  margin-top: 50px;
-  border: 2px solid #ccc;
-  background-color: #ebebeb;
-}
 .indexBtn {
   margin-top: 30px;
 }
@@ -59,10 +50,8 @@ body {
   text-align: center;
   font-size: 12px;
 }
-
 nav > ul > li {
   background-color: #222831;
-  /*border: 1px solid darkblue;*/
   border: 1px solid #222831;
   list-style-type: none;
   border-radius: 10px;
@@ -72,11 +61,6 @@ nav > ul > li:hover {
   background-color: #373a40;
   border: 1px solid #373a40;
 }
-
-/*nav > ul > li > a:hover {
-  color: #222831;
-}*/
-
 nav > ul > li > a {
   padding: 10px;
   color: #ccc;
@@ -84,7 +68,6 @@ nav > ul > li > a {
   display: list-item;
   text-transform: uppercase;
 }
-
 article {
   margin: 30px;
 }
@@ -100,28 +83,23 @@ td {
 .webirc > a {
   color: #222831;
 }
-
 .webirc:hover {
   background-color: #f05454;
   border: 3px solid #222831;
 }
-
 article h2 {
   border-bottom: 2px solid #1f3c88;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
 }
-
 /*table*/
-
 table {
   margin-bottom: 15px;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
-
 table,
 th,
 td {
@@ -154,18 +132,15 @@ code:not(.code) {
   background-color: #fff5ea;
   border-radius: 10px;
 }
-
 h3 > code {
   background-color: transparent !important;
 }
-
 .dhr {
   border: 2px dotted #ccc;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 @media only screen and (min-width: 360px) and (max-width: 499px) {
   .ascii {
     display: none;
