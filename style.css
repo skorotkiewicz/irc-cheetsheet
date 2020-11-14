@@ -159,6 +159,13 @@ h3 > code {
   background-color: transparent !important;
 }
 
+.dhr {
+  border: 2px dotted #ccc;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 499px) {
   .ascii {
     display: none;

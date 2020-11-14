@@ -1,9 +1,20 @@
 div(class="box")
-    p(style="margin-bottom: 10px;") Connection information:
+    p(style="margin-bottom: 10px;") Details for standard IRC clients
         ul
             li
-                strong gooseswell.mooo.com:6667
+                strong gooseswell.mooo.com:6667 
                 span (unencrypted connection)
             li
-                strong gooseswell.mooo.com:6697 +SSL
+                strong gooseswell.mooo.com:6697 +SSL 
+                span(style="color: green;") (secure connection)
+
+    div(class="dhr")
+
+    p(style="margin-bottom: 10px;") WebSocket connection details
+        ul
+            li
+                strong ws://gooseswell.mooo.com:8079 
+                span (unencrypted connection)
+            li
+                strong wss://gooseswell.mooo.com:8080 (SSL) 
                 span(style="color: green;") (secure connection)
