@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet" href="style.css")
-        title Gooseswell.mooo.com
-    body
+extends ../components/layout.pug
 
-        div(class="container")
-            div(class="grid-container")
-                div(class="A")
-                    include ../components/nav.pug
-
-                div(class="B")
-                    include ../components/ascii.pug
-                    include ../components/title.pug
-
-                    include ../articles/chanserv.pug
+block content
+    include ../articles/chanserv.pug
