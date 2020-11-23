@@ -54,7 +54,24 @@ article
             tr
                 td +N
                 td No nick changes permitted in the channel.
-
+            tr
+                td +C
+                td Allows channels to block messages which contain CTCPs
+            tr
+                td +T
+                td Allows channels to block messages sent with the /NOTICE command.
+            tr
+                td +F &lt;changes&gt;:&lt;seconds&gt; 
+                td Prevents more than &lt;changes&gt; nickname changes in the last &lt;seconds&gt; seconds. [/mode #channel +F 3:5]
+            tr
+                td +J &lt;second&gt;
+                td Prevents users from rejoining after being kicked from a channel. [/mode #channel +J 30]
+            tr
+                td +K
+                td Disables the usage of the /KNOCK command on this channel.
+            tr
+                td +H &lt;count&gt;:&lt;period&gt;
+                td Sends up to &lt;count&gt; messages from the last &lt;period&gt; on join. [/mode #channel +H 25:2h]
 
 
     h2 Prefixes 
